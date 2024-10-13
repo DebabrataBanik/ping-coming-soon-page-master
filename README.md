@@ -26,7 +26,7 @@ Users should be able to view the optimal layout for the site depending on their 
 ### Links
 
 - [Live Site Url](https://debabratabanik.github.io/ping-coming-soon-page-master/)
-- [Solution Url]()
+- [Solution Url](https://www.frontendmentor.io/solutions/ping-coming-soon-page-master-U5jw0TQayB)
 
 ### Built with
 
