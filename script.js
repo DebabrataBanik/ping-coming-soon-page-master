@@ -12,4 +12,16 @@ form.addEventListener('submit', e => {
   } else {
     error.classList.add('show');
   }
+
+  if (!email.value.trim()) {
+    error.textContent = 'Whoops! It looks like you forgot to add your email';
+  }
+  else if (email.value.match(email_regex)) {
+    error.classList.remove('show');
+
+
+  } else {
+    error.classList.add('show');
+    error.textContent = 'Please enter a valid email address'
+  }
 })
