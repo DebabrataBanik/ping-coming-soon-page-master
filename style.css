@@ -35,7 +35,7 @@ body{
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  padding-block: 3rem 2rem;
+  padding-block: 4rem 2rem;
 }
 
 h1{
@@ -122,7 +122,7 @@ p{
 }
 
 footer{
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 .footer__links{
@@ -161,7 +161,12 @@ footer p{
 @media (min-width: 768px) {
 
   h1{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+
+    & span{
+      border: 2.5px solid var(--blue);
+    }
   }
 
   h2{
