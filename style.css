@@ -87,6 +87,9 @@ p{
     color: var(--pale-blue);
   }
 }
+.error{
+  border: 1px solid var(--light-red);
+}
 
 .error__message{
   display: none;

@@ -7,21 +7,18 @@ form.addEventListener('submit', e => {
 
   const email_regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
 
-  if (email.value.match(email_regex)) {
-    error.classList.remove('show');
-  } else {
+  if (email.value.trim() === '') {
     error.classList.add('show');
-  }
-
-  if (!email.value.trim()) {
     error.textContent = 'Whoops! It looks like you forgot to add your email';
+    email.classList.add('error')
   }
   else if (email.value.match(email_regex)) {
     error.classList.remove('show');
-
+    email.classList.remove('error')
 
   } else {
     error.classList.add('show');
+    email.classList.add('error')
     error.textContent = 'Please enter a valid email address'
   }
 })
