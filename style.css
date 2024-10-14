@@ -117,6 +117,7 @@ p{
   color: white;
   font-weight: 600;
   font-size: 0.65rem;
+  outline: none;
   box-shadow: 0 5px 25px -10px var(--blue);
 
   &:hover{

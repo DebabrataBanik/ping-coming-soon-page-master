@@ -15,6 +15,8 @@ form.addEventListener('submit', e => {
   else if (email.value.match(email_regex)) {
     error.classList.remove('show');
     email.classList.remove('error')
+    // email.classList.replace(`error`, `success`)
+    email.value = '';
 
   } else {
     error.classList.add('show');
